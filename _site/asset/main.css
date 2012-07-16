@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+    width: 780px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+a {
+    color: #333;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+    letter-spacing: -0.02em;
+}
+
+time {
+    color: #666;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+code {
+    font-family: monospace;
+    background-color: #eaeaea;
+}
+
+pre > code {
+    background-color: transparent;
+}
+
+pre {
+    font-size: 14px;
+    line-height: 1.3em;
+    padding: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+small {
+    font-size: smaller;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul, ol {
+    margin-left: 40px;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+
+blockquote {
+    border-left: 10px solid #aaa;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+body > header {
+    background-color: #ddd;
+    padding: 20px 15px 15px 15px;
+    margin: 0 -15px;
+}
+
+.postPreview {
+    margin: 30px 0;
+}
+
+.postPreview > header {
+    margin: 5px 0;
+}
+.postPreview > header > h1 {
+    display: inline;
+    font-size: 24px;
+}
+
+.post {
+    margin: 30px 0;
+}
+
+.post > header {
+    margin: 15px 0;
+}
+.backLink {
+    display: block;
+    margin: 10px 0;
+}
+.post > header > h1 {
+    display: inline;
+    font-size: 32px;
+}
+.post > section > h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.post > section > h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.followupActions {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 15px -15px;
+}
