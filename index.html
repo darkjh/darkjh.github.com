@@ -10,8 +10,10 @@ title: jh's blog
             {{ post.date | date: '%d. %B %Y' }}
         </time>
     </header>
-    <section>
-        {{ post.description }}
+    <section class="post">
+      <section>
+        {{ post.content }}
+      </section>
     </section>
 </section>
 {% endfor %}

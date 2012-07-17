@@ -1,8 +1,8 @@
 body {
     margin: 0 auto;
     width: 780px;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 18px;
+    font: 16px 'Helvetica Neue',Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3",Arial,sans-serif;
+    color: #494949;
     line-height: 1.5em;
 }
 
@@ -21,8 +21,8 @@ h1, h2 {
 time {
     color: #666;
     font-size: 18px;
-    font-style: italic;
     margin-left: 10px;
+    float:right;
 }
 
 code {
@@ -35,9 +35,10 @@ pre > code {
 }
 
 pre {
-    font-size: 14px;
-    line-height: 1.3em;
+    font-size: 13px;
+    line-height: 1.2em;
     padding: 5px;
+    font-style:normal;
 }
 
 strong {
@@ -74,18 +75,11 @@ body > header {
     background-color: #ddd;
     padding: 20px 15px 15px 15px;
     margin: 0 -15px;
+    font-size: 18px;
 }
 
-.postPreview {
-    margin: 30px 0;
-}
-
-.postPreview > header {
-    margin: 5px 0;
-}
-.postPreview > header > h1 {
-    display: inline;
-    font-size: 24px;
+body > header > a {
+    margin-left: 1.5em;
 }
 
 .post {
@@ -110,6 +104,20 @@ body > header {
 .post > section > h3 {
     font-size: 24px;
     margin: 10px 0;
+}
+
+.postPreview {
+    margin: 30px 0;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
+
+.postPreview > header {
+    margin: 5px 0;
+}
+.postPreview > header > h1 {
+    display: inline;
+    font-size: 24px;
 }
 
 .followupActions {
