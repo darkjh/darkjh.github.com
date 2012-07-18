@@ -27,7 +27,7 @@ time {
 
 code {
     font-family: monospace;
-    background-color: #eaeaea;
+/*    background-color: #d8d8d8; */
 }
 
 pre > code {
@@ -39,6 +39,7 @@ pre {
     line-height: 1.2em;
     padding: 5px;
     font-style:normal;
+    background-color: #eee;
 }
 
 strong {
@@ -82,6 +83,13 @@ body > header > a {
     margin-left: 1.5em;
 }
 
+footer {
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
 .post {
     margin: 30px 0;
 }
@@ -92,6 +100,7 @@ body > header > a {
 .backLink {
     display: block;
     margin: 10px 0;
+    text-align: right;
 }
 .post > header > h1 {
     display: inline;
