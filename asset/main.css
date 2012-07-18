@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Minecraftia;
+    src: url('type/minecraftia-webfont.ttf');
+}
+
 body {
     margin: 0 auto;
     width: 780px;
@@ -19,8 +24,8 @@ h1, h2 {
 }
 
 time {
-    color: #666;
-    font-size: 18px;
+    color: #494949;
+    font-size: 15px;
     margin-left: 10px;
     float:right;
 }
@@ -44,6 +49,7 @@ pre {
 
 strong {
     font-weight: bold;
+    color: #3686aa;
 }
 em {
     font-style: italic;
@@ -76,11 +82,12 @@ body > header {
     background-color: #ddd;
     padding: 20px 15px 15px 15px;
     margin: 0 -15px;
-    font-size: 18px;
+    font: 20px Minecraftia;
 }
 
 body > header > a {
-    margin-left: 1.5em;
+    margin-right: 0.6em;
+    margin-right: 0.6em;
 }
 
 footer {
@@ -97,19 +104,25 @@ footer {
 .post > header {
     margin: 15px 0;
 }
+
 .backLink {
     display: block;
     margin: 10px 0;
     text-align: right;
 }
+
 .post > header > h1 {
     display: inline;
     font-size: 32px;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #8d8d8d;
 }
+
 .post > section > h2 {
     font-size: 28px;
     margin: 10px 0;
 }
+
 .post > section > h3 {
     font-size: 24px;
     margin: 10px 0;
@@ -133,4 +146,9 @@ footer {
     background-color: #ddd;
     padding: 15px;
     margin: 15px -15px;
+}
+
+::selection {
+ background: #3686aa;
+ color: #fff;
 }
