@@ -1,9 +1,19 @@
 # Personal info
-title : jh's blog
+title: jh.blog
 author :
-  name : Han Ju
-  email : ju.han.felix@gmail.com
-  github : darkjh 
-  twitter : juhanlol
+  name: Han Ju
+  email: ju.han.felix@gmail.com
+  github: darkjh 
+  twitter: juhanlol
 
+# Markdown Engine
+markdown: rdiscount
+
+# Code highlighting
 pygments: true
+
+# Auto generation
+auto: true
+server: true
+
+# LaTeX support

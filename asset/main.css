@@ -5,7 +5,7 @@
 
 body {
     margin: 0 auto;
-    width: 780px;
+    width: 60%;
     font: 16px 'Helvetica Neue',Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3",Arial,sans-serif;
     color: #494949;
     line-height: 1.5em;
@@ -14,6 +14,7 @@ body {
 a {
     color: #333;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -32,7 +33,7 @@ time {
 
 code {
     font-family: monospace;
-/*    background-color: #d8d8d8; */
+   background-color: #eee;
 }
 
 pre > code {
@@ -92,7 +93,8 @@ body > header > a {
 
 footer {
     background-color: #ddd;
-    padding: 15px;
+    padding: 20px 15px 15px 15px;
+    margin: 0 -15px;
     text-align: center;
     font-size: 14px;
 }
@@ -113,7 +115,7 @@ footer {
 
 .post > header > h1 {
     display: inline;
-    font-size: 32px;
+    font-size: 28px;
     font-family: Impact, Charcoal, sans-serif;
     color: #8d8d8d;
 }
@@ -126,6 +128,14 @@ footer {
 .post > section > h3 {
     font-size: 24px;
     margin: 10px 0;
+}
+
+.postPreview > header > h1 > a {
+    display: inline;
+    font-size: 28px;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #8d8d8d;
+    text-decoration: none;
 }
 
 .postPreview {
@@ -152,3 +162,5 @@ footer {
  background: #3686aa;
  color: #fff;
 }
+
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}

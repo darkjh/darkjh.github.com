@@ -1,6 +1,6 @@
 ---
 layout: default
-title: jh's blog
+title: jh.blog
 ---
 {% for post in site.posts %}
 <section class="postPreview">
@@ -11,6 +11,7 @@ title: jh's blog
             {{ post.date | date: '%d. %B %Y' }}
         </time>
     </header>
+    <!-- render each post in index page without the comment part -->
     <section class="post">
       <section>
         {{ post.content }}

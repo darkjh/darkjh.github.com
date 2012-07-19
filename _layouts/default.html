@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- meta infomation and css links -->
         <meta charset="UTF-8" />
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/asset/reset.css" />
         <link rel="stylesheet" href="/asset/main.css" />
         <link rel="stylesheet" href="/asset/highlight.css" /> 
-        <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+        <!-- <link rel="alternate" type="application/rss+xml" href="/rss.xml" /> -->
+
+        <!-- mathjax for LaTeX support -->
+        <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+
+        <!-- some mathjax config for cohabiting with markdown -->
+        <!-- code from: http://cwoebker.com/posts/latex-math-magic -->
+        <script type="text/x-mathjax-config">
+            // tell MathJax to ignore other code areas
+            MathJax.Hub.Config({
+                tex2jax: {
+                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+                }
+            });
+            // add every latex code area with a 'has-jax' class for removing any markdown modifications
+            MathJax.Hub.Queue(function() {
+                var all = MathJax.Hub.getAllJax(), i;
+                for(i=0; i < all.length; i += 1) {
+                    all[i].SourceElement().parentNode.className += ' has-jax';
+                }
+            });
+        </script>
+
+        <!-- google web analytics -->
 <!--        <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-27300026-1']);
@@ -32,6 +58,6 @@
         </section>
     </body>
     <footer>
-        Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://daringfireball.net/projects/markdown/">Markdown</a> and <a href="http://pages.github.com/">Github Pages</a> .
+        Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, <a href="http://www.mathjax.org/">MathJax</a> and <a href="http://pages.github.com/">Github Pages</a> .
     </footer>
 </html>
