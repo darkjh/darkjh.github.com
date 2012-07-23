@@ -1,0 +1,40 @@
+require "rubygems"
+require 'rake'
+require 'yaml'
+require 'time'
+
+SOURCE = "."
+CONFIG = {
+  'layouts' => File.join(SOURCE, "_layouts"),
+  'posts' => File.join(SOURCE, "_posts"),
+  'post_ext' => "md"
+}
+
+# Usage: rake post title="A Title"
+desc "Begin a new post in #{CONFIG['posts']}"
+task :post do
+  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+  title = ENV["title"] || "new-post"
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  date = Time.now.strftime('%Y-%m-%d')
+
+  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title.gsub(/-/,' ')}\""
+    post.puts 'description: ""'
+    post.puts "tags: []"
+    post.puts "---"
+  end
+end # task :post
+
+desc "Launch preview environment"
+task :preview do
+  system "jekyll --auto --server"
+end # task :preview
