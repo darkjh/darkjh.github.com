@@ -1,4 +1,12 @@
 darkjh.github.com
 =================
 
-my blog with Jekyll
+My blog using Jekyll, MathJax and hosted on Github Pages.
+
+TO-DOs
+----------
+
++ unifiy fonts appearance with Google Web Fonts api
++ show only the first several parts of the articles on index page
++ about page
++ tag system
