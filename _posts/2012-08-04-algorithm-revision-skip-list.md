@@ -9,11 +9,11 @@ tags: [algorithm, learning notes]
 
 ## 结构 ##
 
-一般链表结构存储数据的话, 即便是已排序的, 查询操作也需要`\(\Theta(n)\)`的时间. 这是因为链表不具有随机存取的特性(random access), 无法使用二分查找. 而skip list的思路则是利用多个链表, 跳跃式的存储数据.
+skip list顾名思义是一种链表结构. 一般使用链表来存储数据的话, 即便是已排序的, 查询操作也需要`\(\Theta(n)\)`的时间. 这是因为链表不具有随机存取的特性(random access), 无法使用二分查找. 而skip list的思路则是利用多个链表, 跳跃式的存储数据, 如图:
 
 ![](/images/2012-08/Skip-list-1.png)
 
-可以把集合中的元素看成是公交车站, 含有全部元素的底部列表就是慢车的线路, 它每站都停. 而上层的链表, 则是快车的线路, 它只停靠某些站点. 元素的查找操作就可以看作是从终点站开始的一次出行, 比如对于上图的skip list, 我们要去66站, 那么可以先坐快车到42, 然后转慢车到66.
+可以把链表中的元素看成是公交车的车站, 含有全部元素的底部列表就是慢车的线路, 它每站都停. 而上层的链表, 则是快车的线路, 它只停靠某些站点. 元素的查找操作就可以看作是从终点站开始的一次出行, 通过乘坐快车加慢车的组合, 快速的到达目的地. 比如对于上图的skip list, 我们要去66号车站, 那么可以先坐快车到42, 然后转慢车到66.
 
 其实skip list本质上是对树的一种链表式的模仿:
 
@@ -21,11 +21,11 @@ tags: [algorithm, learning notes]
     1-------3-------5-------7-------*
     1---2---3---4---5---6---7---8---*
 
-这不就是一颗二叉查找树么..
+这样看起来不就是一颗二叉查找树么..
 
 这里给出实现的结构体代码:
 
-{% highlight c %}
+{% highlight java %}
 /* data stucture for skip list */
 /* node structure */
 struct node {
@@ -59,7 +59,7 @@ typedef struct {
 这个形状的skip list是理想的, 因为当我们插入或者删除节点的时候, 这个形状就会被破坏. 当然, 平均来看, 我们仍旧有非常大的概率在对数时间里完成查找.
 
 查找函数:
-{% highlight c %}
+{% highlight java %}
 sl_node *find(const sl_head *list, const int key) {
 
   sl_node *p = list->head;
@@ -106,7 +106,7 @@ sl_node *find(const sl_head *list, const int key) {
 
 插入和删除的代码:
 
-{% highlight c %}
+{% highlight java %}
 /* insert into a skip list */
 /* bottom up approach */
 int insert(sl_head *list, int key) {

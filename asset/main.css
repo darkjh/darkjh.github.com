@@ -33,11 +33,11 @@ time {
 
 code {
     font-family: monospace;
-   background-color: #eee;
+/*    background-color: #eee;*/
 }
 
 pre > code {
-    background-color: transparent;
+/*    background-color: transparent; */
 }
 
 pre {
@@ -45,7 +45,7 @@ pre {
     line-height: 1.2em;
     padding: 5px;
     font-style:normal;
-    background-color: #eee;
+/*    background-color: #eee;*/
 }
 
 strong {
