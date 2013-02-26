@@ -1,0 +1,164 @@
+body {
+    margin: 0 auto;
+    /* margin: 2em; */
+    width: 80%;
+    font: 16px 'Helvetica Neue',Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3",Arial,sans-serif;
+    line-height: 1.5em;
+}
+
+a {
+    font-weight: bold;
+}
+
+a.smooth {
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: cochin, "Bitstream Charter", georgia, serif;
+}
+
+h1 {
+    text-align: center;
+    float: center;
+}
+
+h2, h3 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0.5em;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.term-address, .home-address {
+    text-align: center;
+    padding: 0.2em;
+    width: 15em;
+    height: 10em;
+    border: 1px solid #000;
+}
+
+.term-address {
+    float: left;
+    margin-top: -8em;
+}
+
+.home-address {
+    float: right;
+    margin-top: -8em;
+}
+
+.electronic-address {
+    float: center;
+    text-align: center;
+    padding: 0.1em;
+    margin-left: -2.5em;
+    height: 4em;
+    border: none;
+}
+
+.term-address ul, .home-address ul, .electronic-address ul {
+    list-style: none;
+}
+
+.objective {
+    margin-top: 5em;
+}
+
+.wa-location-date, .ma-location-date, .fr-location-date, .ch-location-date, .de-location-date {
+    border: 1px solid #000;
+    padding: 10px;
+    height: 0.75em;
+    font-size: 0.75em;
+}
+
+.location {
+    float: left;
+    height: 1em;
+}
+
+.date {
+    float: right;
+    height: 1em;
+}
+
+.date div {
+    display: inline;
+}
+
+.date ul, .date li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.end-date li {
+    display: inline;
+}
+
+.end-date li:before {
+    content: "\2014  ";
+}
+
+.coursework ul, .coursework li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.coursework {
+    margin-left: 1em;
+    padding: 5px;
+}
+
+.coursework ul, .coursework li {
+    /* display: inline-block; */
+    display: inline;
+    padding-left: 5px;
+}
+
+.coursework li:before {
+    content: "*  ";
+}
+
+.description-points  {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+@media print {
+    body {
+	font-size: 9pt;
+    }
+    h2 {
+	font-size: 12pt;
+    }
+    h3 {
+	font-size: 10pt;
+    }
+}
+
+@media screen {
+    .wa-location-date, .ma-location-date {
+	background-image: url(ma.png);
+    }
+    .fr-location-date {
+	background-image: url(fr.png);
+    }
+    .ch-location-date {
+	background-image: url(ch.png);
+    }
+    .de-location-date {
+	background-image: url(de.png);
+    }
+    .wa-location-date, .ma-location-date, .fr-location-date, .ch-location-date, .de-location-date {
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-position: center center;
+    }
+}
