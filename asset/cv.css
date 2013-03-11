@@ -35,7 +35,7 @@ h3 {
     font-variant: small-caps;
 }
 
-.term-address, .home-address {
+.personal-status, .home-address {
     text-align: center;
     padding: 0.2em;
     width: 15em;
@@ -43,7 +43,7 @@ h3 {
     border: 1px solid #000;
 }
 
-.term-address {
+.personal-status {
     float: left;
     margin-top: -8em;
 }
@@ -62,7 +62,7 @@ h3 {
     border: none;
 }
 
-.term-address ul, .home-address ul, .electronic-address ul {
+.personal-status ul, .home-address ul, .electronic-address ul {
     list-style: none;
 }
 
@@ -131,6 +131,14 @@ h3 {
     padding-left: 1.2em;
 }
 
+.skills h3 {
+    border-bottom: 1px solid
+}
+
+.skills em {
+    text-decoration: underline
+}
+
 @media print {
     body {
 	font-size: 9pt;
@@ -161,4 +169,8 @@ h3 {
 	background-attachment: fixed;
 	background-position: center center;
     }
+}
+
+.sections {
+    margin-bottom: 50px;
 }
