@@ -16,7 +16,7 @@ for a six-month exchange.
 
 My portfolio of knowledge is composed of a wide range of subjects, such as software engineering & programming, web development, data analysis & machine learning, database systems as well as datawarehouse modeling. For the moment, I'm studying functional programming, programming languages & type systems, distributed algorithms and some machine learning applications in EPFL.
 
-Here is my course list and my CV.
+Here is my course list and my [CV][5].
 
    [1]: http://www.utseus.com/
    [2]: http://www.shu.edu.cn/Default.aspx?alias=www.shu.edu.cn/english
